@@ -1,0 +1,396 @@
+body{
+    font-family:"roboto";
+    font-weight:500;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topbar{
+    background-color: rgb(5, 5, 59);
+    color:white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px;
+}
+
+.topbar i:hover{
+    font-size: 30px;
+    margin-left: 40px;
+    background-color: orange;
+
+}
+
+
+
+
+.navbar{
+    background-color: hwb(0 91% 4%);
+}
+
+.logo img{
+    width:100px;
+    height:100px;
+    margin-left: 20px;
+}
+.donation button{
+    background-color: orange;
+  
+    color:white;
+    border-style: none;
+    font-size: 10px;
+    padding:10px;
+    
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+
+
+
+.donation button  {
+    color:white;
+    font-size: 20px;
+    background-color: rgb(247, 186, 74);
+border-style:none;
+padding:10px;
+margin-right: 20px;
+margin:20px;
+
+    
+    
+
+}
+
+
+.donation button:hover{
+    background-color: rgb(7, 7, 66);
+    cursor:pointer;
+    transition: 4seconds;
+}
+.navbar{
+
+    display:flex;
+    justify-content: space-between;
+    
+
+
+}
+.navlink ul{
+    list-style-type: none;
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.navlink a{
+    text-decoration:none;
+}
+.navbar a:hover{
+    color:rgb(2, 2, 105);
+}
+.container{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    gap:30px;
+    padding:60px;
+    
+    
+    
+}
+.left-container img{
+    width:100%;
+    height:100%;
+    
+}
+.right -container {
+    text-align:left;
+    align-items: center;
+
+
+color:blue;
+
+}
+    
+.right-container h3{
+    color:blue;
+    font-weight:600;
+}
+
+.right-container h4{
+    font-size:36px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+.right-container p {
+    
+margin-top:30px;
+color:dark gray;
+font-size:larger;
+
+
+
+
+
+}
+.viewmorediv{
+    
+    background-color: white;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+}
+.viewmorediv button {
+    padding:8px;
+    width:120px;
+    color:white;
+    background-color: rgb(243, 106, 11);
+    border-style: none;
+    font-size: larger;
+}
+.viewmorediv button:hover{
+    background-color: white;
+    color:rgb(243, 106, 11);
+    cursor:pointer;
+    border:solid 2px rgb(243, 106, 11);
+    transition: 4seconds;
+    font-size: larger;
+    
+}
+.Gallery{
+    padding:20px;
+    background-color: hwb(240 94% 4%);
+    margin-left: 40px;
+    border-left: 6px solid blue;
+}
+.imgcollection{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:20px;
+}
+.imgcollection img{
+    width:100%;
+    height:100%;
+}
+.viewall{
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+}
+.viewall button{
+
+
+    padding:20px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: #5c5ca5;
+    border-style: none;
+    color:blue;
+    font-weight: bold;
+    border-radius:8px;
+    font-size:20px;
+    
+}
+.viewall button:hover{
+
+
+    background-color: rgb(106, 106, 230);
+    cursor:pointer;
+
+}
+.events{
+    
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:30px;
+        padding: 60px;
+}
+
+.left-event h3 {
+
+    color:rgb(111, 111, 251);
+    font-weight: 400px;
+    margin-bottom: 10px;
+
+    
+}
+
+
+
+
+.left-event h5{
+    color: blue;
+    font-weight: 600;
+    font-size: 16px;
+}
+.left-event h2{
+    font-size: 30px;
+    margin-bottom:50px;
+
+}
+
+.left-event p{
+    margin-top: 34px;
+    color: rgb(18, 18, 18);
+    font-size: larger;
+
+}
+   .left-event{
+    text-align: right;
+   }
+
+.joinus{
+    background-color: white;
+    padding:20px;
+    display:flex;
+    justify-content: center;
+
+}
+.joinus button{
+    padding:12px;
+    width:130px;
+    color: #f4880d;
+    background-color: rgb(241, 237, 229);
+    border-radius: 4px solid #c3770e;
+    font-display: flex;
+    justify-content: left;
+    
+}
+
+    
+
+.joinus button:hover{
+    background-color: rgb(210, 127, 25);
+    color:white;
+    cursor:pointer;
+    border:solid 2px rgb(210, 127, 25);
+    transition: 4seconds;
+    font-size: larger;
+}
+
+
+
+
+
+
+.lefttirko-div h5{
+    color:blue;
+    font-weight:600;
+    font-size:16px;
+
+}
+.lefttirko-div h1{
+    font-size:36px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+.lefttirko-div {
+    text-align: center;
+}
+
+.big-div{
+    background-color: rgb(227, 229, 238);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:30px;
+    padding: 100px;;
+}
+.suruko-div{
+    background-color: white;
+    padding:20px;
+    text-align: center;
+    align-items: center;
+    
+
+}
+.suruko-div h1{
+    margin-top:40px;
+}
+.bichako-div{
+    background-color: white;
+    padding:20px;
+    text-align: center;
+}
+.bichako-div h1{
+    margin-top:40px;
+}
+.lastko-div{
+    background-color: white;
+    padding:20px;
+    text-align: center;
+}
+.lastko-div h1{
+    margin-top:40px;
+}
+
+    
+    
+.suruko-div img{
+    background-color: blue;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+}
+.bichako-div i{
+    
+    background-color: blue;
+    padding:20px;
+    border-radius:50%;
+    text-align: center;
+    font-size: larger;
+
+}
+.lastko-div i{
+    background-color: blue;
+    padding:20px;
+    border-radius:50%;
+    text-align: center;
+    font-size: larger;
+}
+.nilothulo-div{
+    background-color: blue;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color:white;
+    padding: 20px;
+
+}
+
+.lefttirako-div{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.quicklinks  li a{
+    text-decoration: none;
+    color: white;
+
+
+
+}
+.quicklinks li{
+    padding: 10px;
+    list-style: none;
+}
+.first-div img{
+    width:100px;
+    height:100px;
+    margin-left: 10px;
+}
