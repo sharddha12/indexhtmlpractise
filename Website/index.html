@@ -4,82 +4,189 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel ="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="hero-section">
-
-<div class="navbar">
-
-<div class="leftnavbar">
-  <ul class="navlink">
-
-<div class="logo">
-  <img src="https://banner2.cleanpng.com/20180330/xhw/kisspng-laptop-computer-icons-liquid-crystal-display-compu-monitors-5abe5bef14bc81.253138491522424815085.jpg" alt="" width="40px" height="40px">
-</div>
-<li> <a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Gallery</a></li>
-<li><a href="#">Events</a></li>
-<li><a href="#">Contact Us</a></li>
-
-
-
-  </ul>
-
-</div>
-<div class="rightnavbar">
-  
-<input type="text" placeholder="search" id="searchbar">
-<button>search</button>
-
-</div>
-
-
-
-
-
-
-
-
-  </div>
-  <div class="secondsection">
-    <h1>The Future of Education is here</h1>
-    <p>in this world of 7 billion people we need to educate all of them
-      This is the future of education is here .
-    </p>
-
-    <button>subscribes</button>
-    <button>watchvedio</button
-  </div>
-  <div class="secondrightsection">
-    
-    <div class="circle-image">
-      <img src="https://banner2.cleanpng.com/20180330/xhw/kisspng-laptop-computer-icons-liquid-crystal-display-compu-monitors-5abe5bef14bc81.253138491522424815085.jpg" alt="" width="40px" height="40px">  
+  <div id="header">
+  <div class="container">
+    <nav>
+      <img src="https://t3.ftcdn.net/jpg/03/75/67/74/360_F_375677469_UzQt3JpGywuXxkOlCkG7SJXXbiGsampv.jpg" class="logo">
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <p>UI/UX Designer</p>
+      <h1>Hi, I'm <span>Prashanta</span><br>From Nepal</h1>
     </div>
   </div>
-  </div>
-  
-  <div class="thirdsection">
+</div>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="https://img.freepik.com/free-photo/smiling-businessman-with-arms-crossed_329181-678.jpg?semt=ais_hybrid&w=740" alt="">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>I am a UI/UX Designer. I can provide clean code and pixel perfect design. I also make the website more interactive with web animations.</p>
 
-    <div class="content-left">
-      <img src="https://www.shutterstock.com/shutterstock/photos/2598677049/display_1500/stock-photo-a-software-developer-sitting-at-a-computer-screen-staring-in-disbelief-as-an-ai-assistant-refuses-2598677049.jpg" alt="" width="100px", height="100px">
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
 
-  </div>
-  <div class="content-right">
-    <h1>Transforming Education in india</h1>
-    <p>many public school provide education the goverment parents may send their own children to provide schools ,but they must pay for it .in some proper places some children can not to school because their countries do not make education available intheir  countries.or because they are not able to pay for it.because the children have to work for money or because the society have negative prejudice on education for girls .the city of alexandria in egypt,established by the pharaohs ,was the first city in the world to provide education to girls .</p> 
-  </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+            <li><span>Web Development</span><br>Web app development</li>
+            <li><span>App Development</span><br>Building Android/iOS apps</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2020-2021</span><br>Worked as a UI/UX Designer at XYZ Company</li>
+            <li><span>2021-2022</span><br>Freelance Web Developer</li>
+            <li><span>2022-Present</span><br>UI/UX Designer at ABC Agency</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2020</span><br>Web Development - XYZ Institute</li>
+            <li><span>2022</span><br>UI/UX Design - XYZ Institute</li>
+            <li><span>2023</span><br>App Development - XYZ Institute</li>
+          </ul>
+        </div>
 
-  </div>
-  <div class="fourthsection">
-
-
-<h1>Lets Grow T Together</h1>
-<p>Education began in prehistory ,as adults trained the young in the knowleadge and skills demand necessary in the society.in pre-literate 
-  socities,this was achieved orally and through stories and rituals.the first written texts appear in the 6th century b.c. in the city of alexandria in egypt.Story telling passed knowledge ,values ,and skills from one generation to the next,as cultures began to extend their knowledge beyond skills that could be reality learned through experience .
-</p>
-
+      </div>
     </div>
+  </div>
+</div>
+<!-- Services Section -->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>I create visually appealing and user-friendly web designs that enhance user experience and engagement.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-crop"></i>
+        <h2>UI/UX Design</h2>
+        <p>I design beautiful and intuitive user interfaces for websites and mobile applications.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h2>App Design</h2>
+        <p>I design user-friendly mobile applications that solve real-world problems effectively.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="https://cdn.gadgetbytenepal.com/wp-content/uploads/2022/09/iPhone-14-Design-and-Display.jpg" />
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>Connect with talents worldwide. Download on Play Store.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="https://images.pexels.com/photos/2765873/pexels-photo-2765873.jpeg" />
+        <div class="layer">
+          <h3>Music App</h3>
+          <p>Personal portfolio showcasing projects and skills.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="https://images.pexels.com/photos/1194760/pexels-photo-1194760.jpeg" />
+        <div class="layer">
+          <h3>Shopping App</h3>
+          <p>Explore and plan your dream trips with ease.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title"><i class="fa-solid fa-paper-plane"></i> Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i> contact@example.com</p>
+        <p><i class="fa-solid fa-phone-volume"></i> +01 123456789</p>
+        <div class="social-Links">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="#" class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p><i class="fa-solid fa-heart"></i> © 2025 - by Samipa Gurung</p>
+  </div>
+</div>
+<!-- JavaScript -->
+<script>
+  const tablinks = document.getElementsByClassName("tab-links");
+  const tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (let tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+    for (let tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+  const sidemenu = document.getElementById("sidemenu");
+
+  function openmenu() {
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu() {
+    sidemenu.style.right = "-200px";
+  }
+</script>
+
 </body>
 </html>
